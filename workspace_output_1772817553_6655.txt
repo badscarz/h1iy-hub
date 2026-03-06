@@ -1,0 +1,12 @@
+209:				local filePath = "dex/ModuleCache/"..name..".lua"
+365:		local s,data = pcall(env.readfile or error,"DexSettings.json")
+401:				local localAPI = Lib.ReadFile("dex/rbx_api.dat")
+549:				local localRMD = Lib.ReadFile("dex/rbx_rmd.dat")
+999:		makefolder("dex/assets")
+1000:		makefolder("dex/saved")
+1001:		makefolder("dex/plugins")
+1002:		makefolder("dex/ModuleCache")
+1041:			local fileVer = Lib.ReadFile("dex/deps_version.dat")
+1062:			env.writefile("dex/deps_version.dat",Main.ClientVersion.."\n"..Main.RobloxVersion)
+1063:			env.writefile("dex/rbx_api.dat",Main.RawAPI)
+1064:			env.writefile("dex/rbx_rmd.dat",Main.RawRMD)

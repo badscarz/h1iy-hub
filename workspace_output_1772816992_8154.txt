@@ -1,0 +1,199 @@
+/workspace/Dex-master/main.lua:	New Dex
+/workspace/Dex-master/main.lua:	Developed by Moon
+/workspace/Dex-master/main.lua:	Dex is a debugging suite designed to help the user debug games and find any potential vulnerabilities.
+/workspace/Dex-master/main.lua:	If you want more info, you can join the server: https://discord.io/zinnia
+/workspace/Dex-master/main.lua:local service = setmetatable({},{__index = function(self,name)
+/workspace/Dex-master/main.lua:	Main.GitRepoName = "LorekeeperZinnia/Dex"
+/workspace/Dex-master/main.lua:			rconsoleprint("DEX ERROR: "..tostring(str).."\n")
+/workspace/Dex-master/main.lua:				local filePath = "dex/ModuleCache/"..name..".lua"
+/workspace/Dex-master/main.lua:		setmetatable(env,{__newindex = function(self,name,func)
+/workspace/Dex-master/main.lua:			t.Text = "\n\n\n\n\n\n\n\nHello Skidsploit user,\nZinnia and the Secret Service does not approve of Dex being used on your skidsploit.\nPlease consider getting something better.\n\nIncompatible Reason: "..reason.."\n\n\n\n\n\n\n\n"
+/workspace/Dex-master/main.lua:		mt.__index = function() incompatibleMessage("CAN'T NAMECALL") end
+/workspace/Dex-master/main.lua:		local fEnv = setmetatable({zin = 5},{__index = getfenv()})
+/workspace/Dex-master/main.lua:		local s,data = pcall(env.readfile or error,"DexSettings.json")
+/workspace/Dex-master/main.lua:				local localAPI = Lib.ReadFile("dex/rbx_api.dat")
+/workspace/Dex-master/main.lua:				local localRMD = Lib.ReadFile("dex/rbx_rmd.dat")
+/workspace/Dex-master/main.lua:			{5,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=4,Name="Title",Parent={3},Position=UDim2.new(0,-190,0,15),Size=UDim2.new(0,100,0,50),Text="Dex",TextColor3=Color3.new(1,1,1),TextSize=50,TextTransparency=1,}},
+/workspace/Dex-master/main.lua:			{11,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Creator",Parent={2},Position=UDim2.new(1,-110,1,-20),Size=UDim2.new(0,105,0,20),Text="Developed by Moon",TextColor3=Color3.new(1,1,1),TextSize=14,TextXAlignment=1,}},
+/workspace/Dex-master/main.lua:		local iconIndex = data.Icon
+/workspace/Dex-master/main.lua:		if data.IconMap and iconIndex then
+/workspace/Dex-master/main.lua:			if type(iconIndex) == "number" then
+/workspace/Dex-master/main.lua:				data.IconMap:Display(app.Main.Icon,iconIndex)
+/workspace/Dex-master/main.lua:			elseif type(iconIndex) == "string" then
+/workspace/Dex-master/main.lua:				data.IconMap:DisplayByKey(app.Main.Icon,iconIndex)
+/workspace/Dex-master/main.lua:		elseif type(iconIndex) == "string" then
+/workspace/Dex-master/main.lua:			app.Main.Icon.Image = iconIndex
+/workspace/Dex-master/main.lua:		Main.MainGui.OpenButton.Text = val and "X" or "Dex"
+/workspace/Dex-master/main.lua:			{2,"TextButton",{AnchorPoint=Vector2.new(0.5,0),AutoButtonColor=false,BackgroundColor3=Color3.new(0.17647059261799,0.17647059261799,0.17647059261799),BorderSizePixel=0,Font=4,Name="OpenButton",Parent={1},Position=UDim2.new(0.5,0,0,2),Size=UDim2.new(0,32,0,32),Text="Dex",TextColor3=Color3.new(1,1,1),TextSize=16,TextTransparency=0.20000000298023,}},
+/workspace/Dex-master/main.lua:		makefolder("dex")
+/workspace/Dex-master/main.lua:		makefolder("dex/assets")
+/workspace/Dex-master/main.lua:		makefolder("dex/saved")
+/workspace/Dex-master/main.lua:		makefolder("dex/plugins")
+/workspace/Dex-master/main.lua:		makefolder("dex/ModuleCache")
+/workspace/Dex-master/main.lua:			local fileVer = Lib.ReadFile("dex/deps_version.dat")
+/workspace/Dex-master/main.lua:			env.writefile("dex/deps_version.dat",Main.ClientVersion.."\n"..Main.RobloxVersion)
+/workspace/Dex-master/main.lua:			env.writefile("dex/rbx_api.dat",Main.RawAPI)
+/workspace/Dex-master/main.lua:			env.writefile("dex/rbx_rmd.dat",Main.RawRMD)
+/workspace/Dex-master/README.md:# Dex - The Freedom Explorer
+/workspace/Dex-master/README.md:New Dex was planned to be a debugging suite.
+/workspace/Dex-master/README.md:List of stuff that I planned do before I realized that I shouldn't be working on this anymore. If you are really interested in continuing this, you could add this stuff and make New Dex the ultimate utility that I wanted it to be. I might be forgetting stuff since I haven't worked on it for so long.
+/workspace/Dex-master/README.md:	* docs for some other stuff such as 'Dex' global, plugin api, executor api, etc
+/workspace/Dex-master/README.md:	* Access to dex's api for windows, modules, etc
+/workspace/Dex-master/README.md:## Missing stuff from old Dex
+/workspace/Dex-master/README.md:Features that existed in old Dex that I didn't get to make. These should be the first things you add if you plan to continue / edit this.
+/workspace/Dex-master/README.md:Certain features and extensions are private and are reserved for agency use. These are not included in the public release of Dex
+/workspace/Dex-master/LICENSE:Copyright (c) 2021 LorekeeperZinnia
+/workspace/Dex-master/modules/Lib.lua:		return {__index = function(self,ind) if not props[ind] then return funcs[ind] or self.Gui[ind] end end,
+/workspace/Dex-master/modules/Lib.lua:		__newindex = function(self,ind,val) if not props[ind] then self.Gui[ind] = val else rawset(self,ind,val) end end}
+/workspace/Dex-master/modules/Lib.lua:		local newEnv = setmetatable({},{__index = getfenv()})
+/workspace/Dex-master/modules/Lib.lua:			__index = funcs,
+/workspace/Dex-master/modules/Lib.lua:		local mt = {__index = funcs}
+/workspace/Dex-master/modules/Lib.lua:		funcs.Display = function(self,obj,index)
+/workspace/Dex-master/modules/Lib.lua:				obj.ImageRectOffset = Vector2.new(self.IconSizeX*index, 0)
+/workspace/Dex-master/modules/Lib.lua:				obj.ImageRectOffset = Vector2.new(self.IconSizeX*(index % self.NumX), self.IconSizeY*math.floor(index / self.NumX))	
+/workspace/Dex-master/modules/Lib.lua:			if self.IndexDict[key] then
+/workspace/Dex-master/modules/Lib.lua:				self:Display(obj,self.IndexDict[key])
+/workspace/Dex-master/modules/Lib.lua:			self.IndexDict = dict
+/workspace/Dex-master/modules/Lib.lua:		mt.__index = funcs
+/workspace/Dex-master/modules/Lib.lua:				IndexDict = {}
+/workspace/Dex-master/modules/Lib.lua:				IndexDict = {}
+/workspace/Dex-master/modules/Lib.lua:			local index = self.Index
+/workspace/Dex-master/modules/Lib.lua:			local newFrame = createSimple("Frame",{Style=0,Active=true,AnchorPoint=Vector2.new(0,0),BackgroundColor3=Color3.new(0.35294118523598,0.35294118523598,0.35294118523598),BackgroundTransparency=0,BorderColor3=Color3.new(0.10588236153126,0.16470588743687,0.20784315466881),BorderSizePixel=0,ClipsDescendants=false,Draggable=false,Position=UDim2.new(1,-16,0,0),Rotation=0,Selectable=false,Size=UDim2.new(0,16,1,0),SizeConstraint=0,Visible=true,ZIndex=1,Name="ScrollBar",})
+/workspace/Dex-master/modules/Lib.lua:						self:ScrollTo(self.Index - scrollSize)
+/workspace/Dex-master/modules/Lib.lua:						self:ScrollTo(self.Index + scrollSize)
+/workspace/Dex-master/modules/Lib.lua:				self:ScrollTo(self.Index - self.WheelIncrement)
+/workspace/Dex-master/modules/Lib.lua:				self:ScrollTo(self.Index + self.WheelIncrement)
+/workspace/Dex-master/modules/Lib.lua:			local index = self.Index
+/workspace/Dex-master/modules/Lib.lua:			self.Index = math.clamp(self.Index,0,math.max(0,total-visible))
+/workspace/Dex-master/modules/Lib.lua:			self.Index = ind
+/workspace/Dex-master/modules/Lib.lua:			self.Index = self.Index - self.Increment
+/workspace/Dex-master/modules/Lib.lua:			self.Index = self.Index + self.Increment
+/workspace/Dex-master/modules/Lib.lua:			return self.Index > 0
+/workspace/Dex-master/modules/Lib.lua:			return self.Index + self.VisibleSpace < self.TotalSpace
+/workspace/Dex-master/modules/Lib.lua:			return self.Index/(self.TotalSpace-self.VisibleSpace)
+/workspace/Dex-master/modules/Lib.lua:			self.Index = math.floor(perc*(self.TotalSpace-self.VisibleSpace))
+/workspace/Dex-master/modules/Lib.lua:			self.ScrollUpEvent = frame.MouseWheelForward:Connect(function() self:ScrollTo(self.Index - self.WheelIncrement) end)
+/workspace/Dex-master/modules/Lib.lua:			self.ScrollDownEvent = frame.MouseWheelBackward:Connect(function() self:ScrollTo(self.Index + self.WheelIncrement) end)
+/workspace/Dex-master/modules/Lib.lua:		mt.__index = funcs
+/workspace/Dex-master/modules/Lib.lua:				Index = 0,
+/workspace/Dex-master/modules/Lib.lua:		local mt = {__index = funcs}
+/workspace/Dex-master/modules/Lib.lua:				{1,"ScreenGui",{DisplayOrder=1000000,Name="Context",ZIndexBehavior=1,}},
+/workspace/Dex-master/modules/Lib.lua:						local iconIndex = item.Disabled and item.DisabledIcon or item.Icon
+/workspace/Dex-master/modules/Lib.lua:							if type(iconIndex) == "number" then
+/workspace/Dex-master/modules/Lib.lua:								item.IconMap:Display(newEntry.Icon,iconIndex)
+/workspace/Dex-master/modules/Lib.lua:							elseif type(iconIndex) == "string" then
+/workspace/Dex-master/modules/Lib.lua:								item.IconMap:DisplayByKey(newEntry.Icon,iconIndex)
+/workspace/Dex-master/modules/Lib.lua:						elseif type(iconIndex) == "string" then
+/workspace/Dex-master/modules/Lib.lua:							newEntry.Icon.Image = iconIndex
+/workspace/Dex-master/modules/Lib.lua:		local mt = {__index = funcs}
+/workspace/Dex-master/modules/Lib.lua:			self.ScrollV:ScrollTo(self.ScrollV.Index + y)
+/workspace/Dex-master/modules/Lib.lua:			self.ScrollH:ScrollTo(self.ScrollH.Index + x)
+/workspace/Dex-master/modules/Lib.lua:					label.ZIndex = 2
+/workspace/Dex-master/modules/Lib.lua:				self.ViewY = scrollV.Index
+/workspace/Dex-master/modules/Lib.lua:				self.ViewX = scrollH.Index
+/workspace/Dex-master/modules/Lib.lua:		local mt = {__index = funcs}
+/workspace/Dex-master/modules/Lib.lua:				obj.ViewY = scrollV.Index
+/workspace/Dex-master/modules/Lib.lua:				obj.ViewX = scrollH.Index
+/workspace/Dex-master/modules/Lib.lua:		local mt = {__index = funcs}
+/workspace/Dex-master/modules/Lib.lua:		local mt = {__index = funcs}
+/workspace/Dex-master/modules/Lib.lua:			envelopeDrag.ZIndex = 2
+/workspace/Dex-master/modules/Lib.lua:			envelopeDragLine.ZIndex = 2
+/workspace/Dex-master/modules/Lib.lua:		local mt = {__index = funcs}
+/workspace/Dex-master/modules/Properties.lua:	local props,viewList,expanded,indexableProps,propEntries,autoUpdateObjs = {},{},{},{},{},{}
+/workspace/Dex-master/modules/Properties.lua:	Properties.Index = 0
+/workspace/Dex-master/modules/Properties.lua:	Properties.GetIndexableProps = function(obj,classData)
+/workspace/Dex-master/modules/Properties.lua:				local indexNames = {}
+/workspace/Dex-master/modules/Properties.lua:										local indexes = indexNames[sPropInd]
+/workspace/Dex-master/modules/Properties.lua:										if not indexes then indexes = stringSplit(subProps[sPropInd],".") indexNames[sPropInd] = indexes end
+/workspace/Dex-master/modules/Properties.lua:										for j = 1,#indexes do
+/workspace/Dex-master/modules/Properties.lua:											local indexName = indexes[j]
+/workspace/Dex-master/modules/Properties.lua:											firstValSub = firstValSub[indexName]
+/workspace/Dex-master/modules/Properties.lua:											propValSub = propValSub[indexName]
+/workspace/Dex-master/modules/Properties.lua:					local apiProps = indexableProps[APIClassName]
+/workspace/Dex-master/modules/Properties.lua:					if not apiProps then apiProps = Properties.GetIndexableProps(obj,apiClass) indexableProps[APIClassName] = apiProps end
+/workspace/Dex-master/modules/Properties.lua:			Properties.Index = scrollV.Index
+/workspace/Dex-master/modules/Properties.lua:	Properties.NewPropEntry = function(index)
+/workspace/Dex-master/modules/Properties.lua:			local prop = viewList[index + Properties.Index]
+/workspace/Dex-master/modules/Properties.lua:		checkboxes[index] = newCheckbox
+/workspace/Dex-master/modules/Properties.lua:		newEntry.Position = UDim2.new(0,0,0,23*(index-1))
+/workspace/Dex-master/modules/Properties.lua:			local prop = viewList[index + Properties.Index]
+/workspace/Dex-master/modules/Properties.lua:			local prop = viewList[index + Properties.Index]
+/workspace/Dex-master/modules/Properties.lua:			local prop = viewList[index + Properties.Index]
+/workspace/Dex-master/modules/Properties.lua:			local prop = viewList[index + Properties.Index]
+/workspace/Dex-master/modules/Properties.lua:				--fullNameFrame.Position = UDim2.new(0,Properties.EntryIndent*(prop.Depth or 1) + Properties.EntryOffset,0,23*(index-1))
+/workspace/Dex-master/modules/Properties.lua:				Properties.FullNameFrameIndex = index
+/workspace/Dex-master/modules/Properties.lua:			if input.UserInputType == Enum.UserInputType.MouseMovement and Properties.FullNameFrameIndex == index then
+/workspace/Dex-master/modules/Properties.lua:			local prop = viewList[index + Properties.Index]
+/workspace/Dex-master/modules/Properties.lua:			Properties.SetInputProp(prop,index)
+/workspace/Dex-master/modules/Properties.lua:			local prop = viewList[index + Properties.Index]
+/workspace/Dex-master/modules/Properties.lua:			Properties.SetInputProp(prop,index,"color")
+/workspace/Dex-master/modules/Properties.lua:			local prop = viewList[index + Properties.Index]
+/workspace/Dex-master/modules/Properties.lua:				Properties.SetInputProp(prop,index,"right")
+/workspace/Dex-master/modules/Properties.lua:			local prop = viewList[index + Properties.Index]
+/workspace/Dex-master/modules/Properties.lua:				return propEntries[i - Properties.Index]
+/workspace/Dex-master/modules/Properties.lua:	Properties.DisplayEnumDropdown = function(entryIndex)
+/workspace/Dex-master/modules/Properties.lua:		local entry = propEntries[entryIndex]
+/workspace/Dex-master/modules/Properties.lua:	Properties.DisplayBrickColorEditor = function(prop,entryIndex,col)
+/workspace/Dex-master/modules/Properties.lua:		local entry = propEntries[entryIndex]
+/workspace/Dex-master/modules/Properties.lua:			local indexes = string.split(prop.SubName,".")
+/workspace/Dex-master/modules/Properties.lua:			for i = 1,#indexes do
+/workspace/Dex-master/modules/Properties.lua:				local indexName = indexes[i]
+/workspace/Dex-master/modules/Properties.lua:				if #indexName > 0 and propVal then
+/workspace/Dex-master/modules/Properties.lua:					propVal = propVal[indexName]
+/workspace/Dex-master/modules/Properties.lua:	Properties.DisplayProp = function(prop,entryIndex)
+/workspace/Dex-master/modules/Properties.lua:		local entryData = propEntries[entryIndex]
+/workspace/Dex-master/modules/Properties.lua:			checkboxes[entryIndex].Disabled = tags.ReadOnly
+/workspace/Dex-master/modules/Properties.lua:				checkboxes[entryIndex]:SetState(propVal and true or false)
+/workspace/Dex-master/modules/Properties.lua:				checkboxes[entryIndex]:SetState(propVal)
+/workspace/Dex-master/modules/Properties.lua:			local prop = viewList[i + Properties.Index]
+/workspace/Dex-master/modules/Properties.lua:				local entryXOffset = (scaleType == 0 and scrollH.Index or 0)
+/workspace/Dex-master/modules/Properties.lua:								local offset = (scaleType == 0 and Properties.ViewWidth-scrollH.Index or 0)
+/workspace/Dex-master/modules/Properties.lua:			{1,"Frame",{BackgroundColor3=Color3.new(0.14901961386204,0.14901961386204,0.14901961386204),BorderSizePixel=0,Name="InputBox",Size=UDim2.new(0,200,0,22),Visible=false,ZIndex=2,}},
+/workspace/Dex-master/modules/Properties.lua:			{2,"TextBox",{BackgroundColor3=Color3.new(0.17647059261799,0.17647059261799,0.17647059261799),BackgroundTransparency=1,BorderColor3=Color3.new(0.062745101749897,0.51764708757401,1),BorderSizePixel=0,ClearTextOnFocus=false,Font=3,Parent={1},PlaceholderColor3=Color3.new(0.69803923368454,0.69803923368454,0.69803923368454),Position=UDim2.new(0,3,0,0),Size=UDim2.new(1,-6,1,0),Text="",TextColor3=Color3.new(1,1,1),TextSize=14,TextXAlignment=0,ZIndex=2,}},
+/workspace/Dex-master/modules/Properties.lua:	Properties.SetInputProp = function(prop,entryIndex,special)
+/workspace/Dex-master/modules/Properties.lua:					Properties.DisplayBrickColorEditor(prop,entryIndex,propVal)
+/workspace/Dex-master/modules/Properties.lua:				Properties.DisplayEnumDropdown(entryIndex)
+/workspace/Dex-master/modules/Properties.lua:				Properties.DisplayBrickColorEditor(prop,entryIndex,propVal)
+/workspace/Dex-master/modules/Properties.lua:			Properties.Index = scrollV.Index
+/workspace/Dex-master/modules/Explorer.lua:	Explorer.Index = 0
+/workspace/Dex-master/modules/Explorer.lua:		renameBox = create({{1,"TextBox",{BackgroundColor3=Color3.new(0.17647059261799,0.17647059261799,0.17647059261799),BorderColor3=Color3.new(0.062745101749897,0.51764708757401,1),BorderMode=2,ClearTextOnFocus=false,Font=3,Name="RenameBox",PlaceholderColor3=Color3.new(0.69803923368454,0.69803923368454,0.69803923368454),Position=UDim2.new(0,26,0,2),Size=UDim2.new(0,200,0,16),Text="",TextColor3=Color3.new(1,1,1),TextSize=14,TextXAlignment=0,Visible=false,ZIndex=2}}})
+/workspace/Dex-master/modules/Explorer.lua:			Explorer.Index = scrollV.Index
+/workspace/Dex-master/modules/Explorer.lua:			local node = tree[i + Explorer.Index]
+/workspace/Dex-master/modules/Explorer.lua:			{2,"Frame",{BackgroundColor3=Color3.new(1,1,1),BorderSizePixel=0,Name="Line",Parent={1},Size=UDim2.new(1,0,0,1),ZIndex=2,}},
+/workspace/Dex-master/modules/Explorer.lua:			{3,"Frame",{BackgroundColor3=Color3.new(1,1,1),BorderSizePixel=0,Name="Line",Parent={1},Position=UDim2.new(0,0,1,-1),Size=UDim2.new(1,0,0,1),ZIndex=2,}},
+/workspace/Dex-master/modules/Explorer.lua:			{4,"Frame",{BackgroundColor3=Color3.new(1,1,1),BorderSizePixel=0,Name="Line",Parent={1},Size=UDim2.new(0,1,1,0),ZIndex=2,}},
+/workspace/Dex-master/modules/Explorer.lua:			{5,"Frame",{BackgroundColor3=Color3.new(1,1,1),BorderSizePixel=0,Name="Line",Parent={1},Position=UDim2.new(1,-1,0,0),Size=UDim2.new(0,1,1,0),ZIndex=2,}},
+/workspace/Dex-master/modules/Explorer.lua:					dragOutline.Position = UDim2.new(0,entry.Indent.Position.X.Offset-scrollH.Index,0,entry.Position.Y.Offset)
+/workspace/Dex-master/modules/Explorer.lua:						local node = tree[i + Explorer.Index]
+/workspace/Dex-master/modules/Explorer.lua:	Explorer.NewListEntry = function(index)
+/workspace/Dex-master/modules/Explorer.lua:		newEntry.Position = UDim2.new(0,0,0,20*(index-1))
+/workspace/Dex-master/modules/Explorer.lua:			local node = tree[index + Explorer.Index]
+/workspace/Dex-master/modules/Explorer.lua:			local node = tree[index + Explorer.Index]
+/workspace/Dex-master/modules/Explorer.lua:			local node = tree[index + Explorer.Index]
+/workspace/Dex-master/modules/Explorer.lua:			local node = tree[index + Explorer.Index]
+/workspace/Dex-master/modules/Explorer.lua:			local node = tree[index + Explorer.Index]
+/workspace/Dex-master/modules/Explorer.lua:			local node = tree[i + Explorer.Index]
+/workspace/Dex-master/modules/Explorer.lua:				entry.Position = UDim2.new(0,-scrollH.Index,0,entry.Position.Y.Offset)
+/workspace/Dex-master/modules/Explorer.lua:					Explorer.ClassIcons:Display(entry.Indent.Icon, rmdEntry and rmdEntry.ExplorerImageIndex or 0)
+/workspace/Dex-master/modules/Explorer.lua:					renameBox.Position = UDim2.new(0,depth+25-scrollH.Index,0,entry.Position.Y.Offset+2)
+/workspace/Dex-master/modules/Explorer.lua:				if Explorer.Index > relative then
+/workspace/Dex-master/modules/Explorer.lua:					scrollV.Index = relative
+/workspace/Dex-master/modules/Explorer.lua:				elseif Explorer.Index + visibleSpace - 1 <= relative then
+/workspace/Dex-master/modules/Explorer.lua:					scrollV.Index = relative - visibleSpace + 2
+/workspace/Dex-master/modules/Explorer.lua:		scrollV:Update() Explorer.Index = scrollV.Index
+/workspace/Dex-master/modules/Explorer.lua:			local indexName
+/workspace/Dex-master/modules/Explorer.lua:				indexName = "."..curName
+/workspace/Dex-master/modules/Explorer.lua:				indexName = '["'..cleanName..'"]'
+/workspace/Dex-master/modules/Explorer.lua:					indexName = ":GetChildren()["..fcInd.."]"
+/workspace/Dex-master/modules/Explorer.lua:					indexName = ':GetService("'..className..'")'
+/workspace/Dex-master/modules/Explorer.lua:			path = indexName..path
+/workspace/Dex-master/modules/Explorer.lua:			local iconInd = rmdEntry and tonumber(rmdEntry.ExplorerImageIndex) or 0
+/workspace/Dex-master/modules/Explorer.lua:			["service"] = service},{__index = getfenv()})
+/workspace/Dex-master/modules/Explorer.lua:			local node = tree[ind + Explorer.Index]
+/workspace/Dex-master/modules/Explorer.lua:					local fromIndex = table.find(tree,selection.Piviot)
+/workspace/Dex-master/modules/Explorer.lua:					local toIndex = table.find(tree,node)
+/workspace/Dex-master/modules/Explorer.lua:					if not fromIndex or not toIndex then return end
+/workspace/Dex-master/modules/Explorer.lua:					fromIndex,toIndex = math.min(fromIndex,toIndex),math.max(fromIndex,toIndex)
+/workspace/Dex-master/modules/Explorer.lua:					for i = fromIndex,toIndex do
+/workspace/Dex-master/modules/Explorer.lua:			local node = tree[ind + Explorer.Index]
+/workspace/Dex-master/modules/Explorer.lua:			Explorer.Index = scrollV.Index

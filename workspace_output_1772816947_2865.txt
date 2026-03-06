@@ -1,0 +1,8 @@
+total 1484
+drwxr-xr-x  5 user user    4096 Mar  6 17:09 .
+drwxr-xr-x 20 root root    4096 Feb 20 01:32 ..
+drwxr-xr-x  4 user user    4096 Feb 13 00:53 .agent_hooks
+drwxr-xr-x  3 root root    4096 Mar 31  2024 Dex-master
+-rw-r--r--  1 root root 1494639 Mar  6 17:08 Dex-master.zip
+drwxr-xr-x  2 root root    4096 Mar  6 17:09 outputs
+-rw-r--r--  1 root root     395 Mar  6 17:09 todo.md

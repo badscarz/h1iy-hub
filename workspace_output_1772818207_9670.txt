@@ -1,0 +1,3 @@
+/workspace/h1iy-hub/LINK_SETUP.md:82:- [ ] All references to "Dex", "zinnia", and "Moon" replaced
+/workspace/h1iy-hub/README.md:98:## Missing stuff from old Dex
+/workspace/h1iy-hub/README.md:99:Features that existed in old Dex that I didn't get to make. These should be the first things you add if you plan to continue / edit this.

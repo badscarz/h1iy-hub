@@ -1,0 +1,1 @@
+10374:		local s,data = pcall(env.readfile or error,"h1iySettings.json")

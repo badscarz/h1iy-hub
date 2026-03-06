@@ -1,0 +1,1 @@
+10176:			rconsoleprint("h1iy ERROR: "..tostring(str).."\n")

@@ -1,0 +1,20 @@
+--[[
+        h1iy Hub
+        Developed by badscarz
+        
+        h1iy Hub is a debugging suite designed to help the user debug games and find any potential vulnerabilities.
+        
+        You are encouraged to edit, fork, do whatever with this. Feel free to customize and enhance it for your needs.
+        
+        If you want more info, join the community server: [PLACEHOLDER: Your Discord Server Link]
+        Note that support availability may vary.
+]]
+
+-- Main vars
+local Main, Explorer, Properties, ScriptViewer, DefaultSettings, Notebook, Serializer, Lib
+local API, RMD
+
+-- Default Settings
+DefaultSettings = (function()
+	local rgb = Color3.fromRGB
+	return {

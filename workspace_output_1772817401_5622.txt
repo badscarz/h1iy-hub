@@ -1,0 +1,10 @@
+139:	Main.GitRepoName = "LorekeeperZinnia/Dex"
+197:					local s,hashDataStr = pcall(game.HttpGet, game, "https://api.github.com/repos/"..Main.GitRepoName.."/ModuleHashs.dat")
+216:					local s,moduleStr = pcall(game.HttpGet, game, "https://api.github.com/repos/"..Main.GitRepoName.."/Modules/"..name..".lua")
+325:			t.Text = "\n\n\n\n\n\n\n\nHello Skidsploit user,\nZinnia and the Secret Service does not approve of Dex being used on your skidsploit.\nPlease consider getting something better.\n\nIncompatible Reason: "..reason.."\n\n\n\n\n\n\n\n"
+365:		local s,data = pcall(env.readfile or error,"DexSettings.json")
+401:				local localAPI = Lib.ReadFile("dex/rbx_api.dat")
+549:				local localRMD = Lib.ReadFile("dex/rbx_rmd.dat")
+679:			{11,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Creator",Parent={2},Position=UDim2.new(1,-110,1,-20),Size=UDim2.new(0,105,0,20),Text="Developed by Moon",TextColor3=Color3.new(1,1,1),TextSize=14,TextXAlignment=1,}},
+1063:			env.writefile("dex/rbx_api.dat",Main.RawAPI)
+1064:			env.writefile("dex/rbx_rmd.dat",Main.RawRMD)

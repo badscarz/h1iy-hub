@@ -1,49 +1,18 @@
-# h1iy Hub - The Freedom Explorer
+# Dex - The Freedom Explorer
 ![Logo](/logo.png)
 
 ## Intro
-h1iy Hub is a powerful debugging suite designed to help users debug games and find potential vulnerabilities.
+New Dex was planned to be a debugging suite.
+It was discontinued in mid 2021 when grand freedom was achieved, and the script was repurposed to serve the agency's true ambitions.
 
 Witness the most powerful explorer to have ever existed. Bringing unlimited freedom to everyone who has used it. Exploring places that have never been explored before.
+	
+This is the final version of this script, it will no longer be updated. Certain powerful features of this script are off-limits and won't be released.
+You are encouraged to edit, fork, do whatever with this. I pretty much won't be updating it anymore. Pull requests probably won't be accepted.
+Though I would highly appreciate it if you kept the credits in the script. I put a lot of hours into this during the time I worked on it.
 
-You are encouraged to edit, fork, do whatever with this. Feel free to customize and enhance it for your needs.
-
-This project is provided in file format to make it easier for anyone who wants to continue or edit this. Build instructions are below.
-
-## Setup Instructions for badscarz
-
-### Creating Your GitHub Repository
-1. Go to https://github.com/new
-2. Repository name: `h1iy-hub`
-3. Make sure to initialize with a README
-4. Choose Public or Private as needed
-5. Click "Create repository"
-
-### Setting Up on Your Local Machine
-1. Clone the repository:
-```bash
-git clone https://github.com/badscarz/h1iy-hub.git
-cd h1iy-hub
-```
-
-2. Copy all files from this zip to the repository folder
-3. Commit and push:
-```bash
-git add .
-git commit -m "Initial commit: h1iy Hub"
-git push origin main
-```
-
-### Link Placeholders to Edit
-You'll need to update these links throughout the project:
-
-**In main.lua:**
-- Line with `Main.GitRepoName` - Change to: `"badscarz/h1iy-hub"`
-- Discord server link - Replace with your community server
-
-**In README.md:**
-- Update all references to your repository
-- Add your Discord server link below
+I have converted this from ModuleScript format (I used to develop this in studio) to a file format, to make it easier for whoever wants to continue or edit this. Build instructions are below.
+If you feel too lazy to build, I have provided the built version in the releases.
 
 ## Notes
 - There is no cloneref protection, add it if you want
@@ -57,7 +26,7 @@ You'll need to update these links throughout the project:
 3. The executable script will be created as out.lua
 
 ## High Level Roadmap
-List of stuff that could be added to make h1iy Hub the ultimate utility:
+List of stuff that I planned do before I realized that I shouldn't be working on this anymore. If you are really interested in continuing this, you could add this stuff and make New Dex the ultimate utility that I wanted it to be. I might be forgetting stuff since I haven't worked on it for so long.
 - Terminal
 	* basically command interface with useful commands (non troll or gross) to get around
 	* each command has all its funcs, state contained in a table
@@ -89,24 +58,27 @@ List of stuff that could be added to make h1iy Hub the ultimate utility:
 	* info bar at bottom (line of error, line count, col count, etc)
 - Reference
 	* interactive api docs for instance props, funcs, etc
-	* docs for some other stuff such as 'h1iy' global, plugin api, executor api, etc
+	* docs for some other stuff such as 'Dex' global, plugin api, executor api, etc
 	* some tutorials with text, pics, and video (not doing video until roblox removes limit of 3 playing videos)
 - Plugins
 	* Easy way to add some stuff such as right click options, search filters, commands, etc
-	* Access to h1iy's api for windows, modules, etc
+	* Access to dex's api for windows, modules, etc
 
-## Missing features
-Features that could be added if you plan to continue / edit this.
+## Missing stuff from old Dex
+Features that existed in old Dex that I didn't get to make. These should be the first things you add if you plan to continue / edit this.
 - Click to select
 - Saving (instance specific in right click menu, and a menu for whole map saving)
 - Settings menu
 - Tabs in script viewer
 
+## What is not Included
+Certain features and extensions are private and are reserved for agency use. These are not included in the public release of Dex
+- Binary SaveInstance Module
+- Client <-> Server Bridge
+- Secret Service Panel (Executor + Output Viewer)
+- Datastore Editor
+- 3D Model Viewer
+
 ## Community Server
-Join the community server for more information and support:<br>
-[PLACEHOLDER: Your Discord Server Link Here]<br>
-
-Note that support availability may vary.
-
-## License
-This project is licensed under the MIT License.
+If you would like to find more information (such as outdated docs), or talk to others interested in this script, you may join the server:<br>https://discord.gg/jnXFq2VBgU<br>
+Note that very limited to no support will be provided.

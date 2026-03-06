@@ -1,0 +1,5 @@
+-- Main vars
+local Main, Explorer, Properties, ScriptViewer, DefaultSettings, Notebook, Serializer, Lib
+local API, RMD
+
+-- Default Settings

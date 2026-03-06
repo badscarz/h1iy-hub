@@ -1,0 +1,11 @@
+			t.Position = UDim2.new(0,0,0,-36)
+			t.Size = UDim2.new(1,0,1,36)
+			t.TextColor3 = Color3.new(1,1,1)
+			t.TextWrapped = true
+			t.TextScaled = true
+			t.Text = "\n\n\n\n\n\n\n\nHello Skidsploit user,\nZinnia and the Secret Service does not approve of Dex being used on your skidsploit.\nPlease consider getting something better.\n\nIncompatible Reason: "..reason.."\n\n\n\n\n\n\n\n"
+			
+			local sound = Instance.new("Sound",msg)
+			sound.SoundId = "rbxassetid://175964948"
+			sound.Volume = 1
+			sound.Looped = true

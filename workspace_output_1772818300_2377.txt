@@ -1,0 +1,4 @@
+10682:			{5,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=4,Name="Title",Parent={3},Position=UDim2.new(0,-190,0,15),Size=UDim2.new(0,100,0,50),Text="h1iy",TextColor3=Color3.new(1,1,1),TextSize=50,TextTransparency=1,}},
+10917:		Main.MainGui.OpenButton.Text = val and "X" or "h1iy"
+10944:			{2,"TextButton",{AnchorPoint=Vector2.new(0.5,0),AutoButtonColor=false,BackgroundColor3=Color3.new(0.17647059261799,0.17647059261799,0.17647059261799),BorderSizePixel=0,Font=4,Name="OpenButton",Parent={1},Position=UDim2.new(0.5,0,0,2),Size=UDim2.new(0,32,0,32),Text="h1iy",TextColor3=Color3.new(1,1,1),TextSize=16,TextTransparency=0.20000000298023,}},
+11007:		makefolder("h1iy")

@@ -1,0 +1,5 @@
+10011:        h1iy Hub
+10012:        Developed by badscarz
+10014:        h1iy Hub is a debugging suite designed to help the user debug games and find any potential vulnerabilities.
+10334:			t.Text = "\n\n\n\n\n\n\n\nHello user,\nh1iy Hub requires a compatible executor.\nPlease consider getting a better executor.\n\nIncompatible Reason: "..reason.."\n\n\n\n\n\n\n\n"
+10688:			{11,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Creator",Parent={2},Position=UDim2.new(1,-110,1,-20),Size=UDim2.new(0,105,0,20),Text="Developed by badscarz",TextColor3=Color3.new(1,1,1),TextSize=14,TextXAlignment=1,}},

@@ -1,0 +1,50 @@
+--[[
+	New Dex
+	Final Version
+	Developed by Moon
+	
+	Dex is a debugging suite designed to help the user debug games and find any potential vulnerabilities.
+	
+	This is the final version of this script.
+	You are encouraged to edit, fork, do whatever with this. I pretty much won't be updating it anymore.
+	Though I would appreciate it if you kept the credits in the script if you enjoy this hard work.
+	
+	If you want more info, you can join the server: https://discord.io/zinnia
+	Note that very limited to no support will be provided.
+]]
+
+-- Main vars
+local Main, Explorer, Properties, ScriptViewer, DefaultSettings, Notebook, Serializer, Lib
+local API, RMD
+
+-- Default Settings
+DefaultSettings = (function()
+	local rgb = Color3.fromRGB
+	return {
+		Explorer = {
+			_Recurse = true,
+			Sorting = true,
+			TeleportToOffset = Vector3.new(0,0,0),
+			ClickToRename = true,
+			AutoUpdateSearch = true,
+			AutoUpdateMode = 0, -- 0 Default, 1 no tree update, 2 no descendant events, 3 frozen
+			PartSelectionBox = true,
+			GuiSelectionBox = true,
+			CopyPathUseGetChildren = true
+		},
+		Properties = {
+			_Recurse = true,
+			MaxConflictCheck = 50,
+			ShowDeprecated = false,
+			ShowHidden = false,
+			ClearOnFocus = false,
+			LoadstringInput = true,
+			NumberRounding = 3,
+			ShowAttributes = false,
+			MaxAttributes = 50,
+			ScaleType = 1 -- 0 Full Name Shown, 1 Equal Halves
+		},
+		Theme = {
+			_Recurse = true,
+			Main1 = rgb(52,52,52),
+			Main2 = rgb(45,45,45),

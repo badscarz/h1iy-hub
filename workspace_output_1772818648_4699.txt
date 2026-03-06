@@ -1,0 +1,15 @@
+total 1876
+drwxr-xr-x 4 root root    4096 Mar  6 17:37 .
+drwxr-xr-x 5 user user    4096 Mar  6 17:29 ..
+-rw-r--r-- 1 root root       8 Mar 31  2024 .gitignore
+-rw-r--r-- 1 root root    5566 Mar  6 17:37 FINAL_SETUP_INSTRUCTIONS.md
+-rw-r--r-- 1 root root    4327 Mar  6 17:27 GITHUB_SETUP.md
+-rw-r--r-- 1 root root    1065 Mar  6 17:24 LICENSE
+-rw-r--r-- 1 root root    2480 Mar  6 17:37 LINK_SETUP.md
+-rw-r--r-- 1 root root    4410 Mar  6 17:30 README.md
+-rw-r--r-- 1 root root     650 Mar 31  2024 build.py
+-rw-r--r-- 1 root root 1414552 Mar 31  2024 logo.png
+-rw-r--r-- 1 root root   42756 Mar  6 17:23 main.lua
+drwxr-xr-x 2 root root    4096 Mar 31  2024 modules
+-rw-r--r-- 1 root root  400807 Mar  6 17:30 out.lua
+drwxr-xr-x 2 root root    4096 Mar  6 17:32 unused

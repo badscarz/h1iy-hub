@@ -1,0 +1,10 @@
+/workspace/Dex-master/build.py
+/workspace/Dex-master/logo.png
+/workspace/Dex-master/.gitignore
+/workspace/Dex-master/main.lua
+/workspace/Dex-master/README.md
+/workspace/Dex-master/LICENSE
+/workspace/Dex-master/modules/ScriptViewer.lua
+/workspace/Dex-master/modules/Lib.lua
+/workspace/Dex-master/modules/Properties.lua
+/workspace/Dex-master/modules/Explorer.lua

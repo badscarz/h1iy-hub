@@ -1,0 +1,10 @@
+10218:				local filePath = "h1iy/ModuleCache/"..name..".lua"
+10410:				local localAPI = Lib.ReadFile("h1iy/rbx_api.dat")
+10558:				local localRMD = Lib.ReadFile("h1iy/rbx_rmd.dat")
+11008:		makefolder("h1iy/assets")
+11009:		makefolder("h1iy/saved")
+11010:		makefolder("h1iy/plugins")
+11011:		makefolder("h1iy/ModuleCache")
+11050:			local fileVer = Lib.ReadFile("h1iy/deps_version.dat")
+11071:			env.writefile("h1iy/deps_version.dat",Main.ClientVersion.."\n"..Main.RobloxVersion)
+11072:			env.writefile("h1iy/rbx_api.dat",Main.RawAPI)
